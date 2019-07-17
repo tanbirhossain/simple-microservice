@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  hirokutest:
+    image: ${DOCKER_REGISTRY-}hirokutest
+    build:
+      context: .
+      dockerfile: hirokutest\Dockerfile
